@@ -1,0 +1,18 @@
+# vim: set ft=yaml ts=2 expandtab:
+---
+
+- hosts: localhost
+  tasks:
+  - name: this is working like expected
+    include_role:
+      name: role1
+    vars:
+      bla: bla1
+
+- hosts: localhost
+  roles:
+  - name: this is not working like expected
+    role: role1
+    bla: bla1
+
+...

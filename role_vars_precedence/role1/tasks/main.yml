@@ -1,0 +1,11 @@
+# vim: set ft=yaml ts=2 expandtab:
+---
+
+- debug:
+    var: bla
+
+- include_role:
+    name: role2
+  vars:
+    bla: bla2
+...
