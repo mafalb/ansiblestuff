@@ -14,4 +14,5 @@
   - name: this is not working like expected
     role: role1
     bla: bla1
+
 ...
